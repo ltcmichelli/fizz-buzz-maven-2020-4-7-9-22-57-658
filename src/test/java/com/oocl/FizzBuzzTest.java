@@ -16,4 +16,16 @@ public class FizzBuzzTest {
         Assert.assertEquals("1", result);
     }
 
+    @Test
+    public void should_return_fizz_when_input_number_is_dividable_by_3(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(3);
+
+        //then
+        Assert.assertEquals("Fizz", result);
+    }
+
 }
