@@ -17,7 +17,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_when_input_number_is_dividable_by_3(){
+    public void should_return_fizz_when_input_number_is_divisible_by_3(){
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -26,6 +26,18 @@ public class FizzBuzzTest {
 
         //then
         Assert.assertEquals("Fizz", result);
+    }
+
+    @Test
+    public void should_return_buzz_when_input_number_is_divisible_by_5(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(5);
+
+        //then
+        Assert.assertEquals("Buzz", result);
     }
 
 }
