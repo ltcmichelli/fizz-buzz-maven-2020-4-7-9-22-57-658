@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
     @Test
-    public void should_return_number_when_input_number_is_normal(){
+    public void should_return_number_when_input_number_is_normal() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -17,7 +17,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_when_input_number_is_divisible_by_3(){
+    public void should_return_fizz_when_input_number_is_divisible_by_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -29,7 +29,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_when_input_number_is_divisible_by_5(){
+    public void should_return_buzz_when_input_number_is_divisible_by_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
 
@@ -38,6 +38,18 @@ public class FizzBuzzTest {
 
         //then
         Assert.assertEquals("Buzz", result);
+    }
+
+    @Test
+    public void should_return_fizz_buzz_when_input_number_is_divisible_by_3_and_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String result = fizzBuzz.say(15);
+
+        //then
+        Assert.assertEquals("FizzBuzz", result);
     }
 
 }
